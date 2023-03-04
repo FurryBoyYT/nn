@@ -46,7 +46,7 @@ textButton5.Parent = plrGui
 --]]
 
 local function boomboxGear()
-    game:GetService("ReplicatedStorage").events..game.global.itemequip:FireServer("Boombox", "Gear")
+    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
 end
 textButton1.MouseButton1Click:Connect(function()
     boomboxGear()
