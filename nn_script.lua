@@ -45,36 +45,33 @@ textButton5.Position = UDim2.new(0, 1675, 0, 510)
 textButton5.Parent = plrGui
 --]]
 
-local function boomboxGear()
-    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
-end
 textButton1.MouseButton1Click:Connect(function()
-    boomboxGear()
+    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
     wait(1)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://7819487317")
 end)
 
 textButton2.MouseButton1Click:Connect(function()
-    boomboxGear()
+    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
     wait(1)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://11884943198")
 end)
 
 textButton3.MouseButton1Click:Connect(function()
-    boomboxGear()
+    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
     wait(1)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://7016017390")
 end)
 
 --[[
 textButton4.MouseButton1Click:Connect(function()
-    boomboxGear()
+    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
     wait(1)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("pause")
 end)
 
 textButton5.MouseButton1Click:Connect(function()
-    boomboxGear()
+    game:GetService("ReplicatedStorage").events.game.global.itemequip:FireServer("Boombox", "Gear")
     wait(1)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("rewind")
 end)
