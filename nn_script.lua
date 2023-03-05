@@ -1,8 +1,6 @@
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "FAV Songs"
-screenGui.Parent = game.Players.LocalPlayer.PlayerGui
-
-local plrGui = game.Players.LocalPlayer.PlayerGui["FAV Songs"]
+local plrGui = Instance.new("ScreenGui")
+plrGui.Name = "nico's nextbots"
+plrGui.Parent = game.CoreGui
 
 local textButton1 = Instance.new("TextButton")
 textButton1.TextSize = "15"
