@@ -1,6 +1,7 @@
 local plrGui = Instance.new("ScreenGui")
 plrGui.Name = "nico's nextbots"
 plrGui.Parent = game.CoreGui
+plrGui.ResetOnSpawn = false
 
 local textButton1 = Instance.new("TextButton")
 textButton1.TextSize = "15"
