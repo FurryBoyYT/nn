@@ -1,6 +1,6 @@
 --LIBRARY LOAD
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("nico's nextbots", "BloodTheme")
+local Window = Library.CreateLib("nico's nextbots", Theme)
 
 --TABS
 local mainTab = Window:NewTab("Songs")
