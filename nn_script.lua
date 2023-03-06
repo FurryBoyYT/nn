@@ -3,14 +3,13 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("nico's nextbots", "BloodTheme")
 
 --TABS
-local MainTAB = Window:NewTab("Songs")
-local ControlsTAB = Window:NewTab("Controls")
+local MainTAB = Window:NewTab("Main")
 local SettingsTAB = Window:NewTab("Settings")
 
 
 --SECTIONS INSIDE TABS
 local Songs = MainTAB:NewSection("Songs")
-local Controls = ControlsTAB:NewSection("Controls")
+local Controls = MainTAB:NewSection("Controls")
 local Settings = SettingsTAB:NewSection("Settings")
 
 
