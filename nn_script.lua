@@ -1,4 +1,5 @@
 local coreGui = Instance.new("ScreenGui", game.CoreGui)
+coreGui.Name = "AAAAAA"
 
 local textButtonSong1 = Instance.new("TextButton", coreGui)
 textButtonSong1.TextSize = "15"
