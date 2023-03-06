@@ -3,17 +3,16 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("nico's nextbots", Theme)
 
 --TABS
-local mainTab = Window:NewTab("Songs")
+local songsTab = Window:NewTab("Songs")
 local soundsTab = Window:NewTab("Sounds")
-local audioIdTab = Window:NewTab("Audio ID")
 local controlsTab = Window:NewTab("Controls")
 local settingsTab = Window:NewTab("Settings")
 
 
 --SECTIONS INSIDE TABS
-local songs = mainTab:NewSection("Songs")
+local audioId = mainTab:NewSection("Audio ID")
+local songs = mainTab:NewSection("Game Songs")
 local sounds = soundsTab:NewSection("Sounds")
-local audioId = audioIdTab:NewSection("Audio ID")
 local loopedSounds = soundsTab:NewSection("Looped Sounds")
 local controls = controlsTab:NewSection("Controls")
 local settings = settingsTab:NewSection("Gui")
