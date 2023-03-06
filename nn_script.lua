@@ -2,35 +2,35 @@ local coreGui = Instance.new("ScreenGui", game.CoreGui)
 
 local textButtonSong1 = Instance.new("TextButton", coreGui)
 textButtonSong1.TextSize = "15"
-textButtonSong1.Text = "Play\nCootie"
+textButtonSong1.Text = "Play Song 1\nCootie"
 textButtonSong1.Name = "song1Button"
 textButtonSong1.Size = UDim2.new(0, 150, 0, 50)
 textButtonSong1.Position = UDim2.new(0, 1675, 0, 300)
 
 local textButtonSong2 = Instance.new("TextButton", coreGui)
 textButtonSong2.TextSize = "15"
-textButtonSong2.Text = "Play\nPOSSESSION"
+textButtonSong2.Text = "Play Song 2\nPOSSESSION"
 textButtonSong2.Name = "song2Button"
 textButtonSong2.Size = UDim2.new(0, 150, 0, 50)
 textButtonSong2.Position = UDim2.new(0, 1675, 0, 355)
 
 local textButtonSong3 = Instance.new("TextButton", coreGui)
 textButtonSong3.TextSize = "15"
-textButtonSong3.Text = "Play\nW SONG"
+textButtonSong3.Text = "Play Song 3\nW SONG"
 textButtonSong3.Name = "song3Button"
 textButtonSong3.Size = UDim2.new(0, 150, 0, 50)
 textButtonSong3.Position = UDim2.new(0, 1675, 0, 410)
 
 local textButtonSong4 = Instance.new("TextButton", coreGui)
 textButtonSong4.TextSize = "12"
-textButtonSong4.Text = "Play\nVideo Game Lobby"
+textButtonSong4.Text = "Play Song 4\nVideo Game Lobby"
 textButtonSong4.Name = "song4Button"
 textButtonSong4.Size = UDim2.new(0, 150, 0, 50)
 textButtonSong4.Position = UDim2.new(0, 1675, 0, 466)
 
 local textButtonSong5 = Instance.new("TextButton", coreGui)
 textButtonSong5.TextSize = "15"
-textButtonSong5.Text = "Play\nKensuke"
+textButtonSong5.Text = "Play Song 5\nLoading Theme"
 textButtonSong5.Name = "song5Button"
 textButtonSong5.Size = UDim2.new(0, 150, 0, 50)
 textButtonSong5.Position = UDim2.new(0, 1675, 0, 522)
