@@ -10,8 +10,8 @@ local settingsTab = Window:NewTab("Settings")
 
 
 --SECTIONS INSIDE TABS
-local audioId = mainTab:NewSection("Audio ID")
-local songs = mainTab:NewSection("Game Songs")
+local audioId = songsTab:NewSection("Audio ID")
+local songs = songsTab:NewSection("Game Songs")
 local sounds = soundsTab:NewSection("Sounds")
 local loopedSounds = soundsTab:NewSection("Looped Sounds")
 local controls = controlsTab:NewSection("Controls")
