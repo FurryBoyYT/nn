@@ -12,11 +12,12 @@ local settingsTab = Window:NewTab("Settings")
 --SECTIONS INSIDE TABS
 local songs = mainTab:NewSection("Songs")
 local sounds = soundsTab:NewSection("Sounds")
+local loopedSounds = soundsTab:NewSection("Looped Sounds")
 local controls = controlsTab:NewSection("Controls")
 local settings = settingsTab:NewSection("Settings")
 
 
---BUTTONS
+--SONGS
 songs:NewButton("Cootie", "Song name : cootie", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://7819487317")
 end)
@@ -32,20 +33,28 @@ end)
 songs:NewButton("Loading Theme", "Song name : kensuke", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://11274394114")
 end)
-sounds:NewButton("Sus Hub Intro (LOOPED)", "Sound name : Sus Hub Intro", function()
-    game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://9091915146")
-end)
+
+--SOUNDS
 sounds:NewButton("Sus Hub Intro", "Sound name : Sus Hub Intro", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://9091915146")
     wait(3)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("pause")
 end)
-controls:NewButton("Pause", "Pause", function()
+
+--LOOPED SOUNDS
+loopedSounds:NewButton("Sus Hub Intro (LOOPED)", "Sound name : Sus Hub Intro", function()
+    game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://9091915146")
+end)
+
+--CONTROLS
+controls:NewButton("Pause/Resume", "Pause or resume the songs or looped sounds.", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("pause")
 end)
-controls:NewButton("Rewind", "Pause", function()
+controls:NewButton("Rewind", "Rewinds the song and looped sounds", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("rewind")
 end)
+
+--SETTINGS
 settings:NewKeybind("Toggle GUI", "Toggles GUI when a key has been pressed", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
 end)
