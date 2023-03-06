@@ -5,6 +5,7 @@ local Window = Library.CreateLib("nico's nextbots", "BloodTheme")
 --TABS
 local mainTab = Window:NewTab("Songs")
 local soundsTab = Window:NewTab("Sounds")
+local audioIdTab = Window:NewTab("Audio ID")
 local controlsTab = Window:NewTab("Controls")
 local settingsTab = Window:NewTab("Settings")
 
@@ -12,9 +13,10 @@ local settingsTab = Window:NewTab("Settings")
 --SECTIONS INSIDE TABS
 local songs = mainTab:NewSection("Songs")
 local sounds = soundsTab:NewSection("Sounds")
+local audioId = audioIdTab:NewSection("Audio ID")
 local loopedSounds = soundsTab:NewSection("Looped Sounds")
 local controls = controlsTab:NewSection("Controls")
-local settings = settingsTab:NewSection("Settings")
+local settings = settingsTab:NewSection("Gui")
 
 
 --SONGS
@@ -32,6 +34,11 @@ songs:NewButton("Video Game Lobby", "Song name : video game lobby", function()
 end)
 songs:NewButton("Loading Theme", "Song name : kensuke", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://11274394114")
+end)
+
+--ID
+audioId:NewTextBox("Audio ID", "Paste an Audio ID to play!", function(audioId)
+    game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://" .. audioId)
 end)
 
 --SOUNDS
