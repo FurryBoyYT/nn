@@ -1,4 +1,12 @@
---LOAD LIBRARY
+--[[
+Not obfuscated because I don't care and it's pointless because you can literally find most of this in like 2 minutes, and hey maybe you can learn how to make toggles or new scripts with this :wink:
+Works best with the rdite one Idk about the others
+
+btw if it not working fully ur executor is probably just shit because this game never gets updated lmao
+]]--
+
+print("ok cart game troll GUI loaded lmao") --remove if you want
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("nico's nextbots", "BloodTheme")
 
@@ -39,6 +47,6 @@ end)
 Controls:NewButton("Rewind", "Pause", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("rewind")
 end)
-Settings:NewKeybind("Toggle GUI", "Toggles GUI when a key has been pressed", Enum.KeyCode.T, function()
+Settings:NewKeybind("Toggle GUI", "Toggles GUI when a key has been pressed", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
 end)
