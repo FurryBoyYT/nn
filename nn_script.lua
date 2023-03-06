@@ -1,64 +1,79 @@
-local plrGui = Instance.new("ScreenGui")
-plrGui.Name = "nico's nextbots"
-plrGui.Parent = game.CoreGui
-plrGui.ResetOnSpawn = false
+local coreGui = Instance.new("ScreenGui", game.CoreGui)
 
-local textButton1 = Instance.new("TextButton")
-textButton1.TextSize = "15"
-textButton1.Text = "Play\nCootie"
-textButton1.Name = "song1Button"
-textButton1.Size = UDim2.new(0, 150, 0, 50)
-textButton1.Position = UDim2.new(0, 1675, 0, 400)
-textButton1.Parent = plrGui
+local textButtonSong1 = Instance.new("TextButton", coreGui)
+textButtonSong1.TextSize = "15"
+textButtonSong1.Text = "Play\nCootie"
+textButtonSong1.Name = "song1Button"
+textButtonSong1.Size = UDim2.new(0, 150, 0, 50)
+textButtonSong1.Position = UDim2.new(0, 1675, 0, 300)
 
-local textButton2 = Instance.new("TextButton")
-textButton2.TextSize = "15"
-textButton2.Text = "Play\nPOSSESSION"
-textButton2.Name = "song2Button"
-textButton2.Size = UDim2.new(0, 150, 0, 50)
-textButton2.Position = UDim2.new(0, 1675, 0, 455)
-textButton2.Parent = plrGui
+local textButtonSong2 = Instance.new("TextButton", coreGui)
+textButtonSong2.TextSize = "15"
+textButtonSong2.Text = "Play\nPOSSESSION"
+textButtonSong2.Name = "song2Button"
+textButtonSong2.Size = UDim2.new(0, 150, 0, 50)
+textButtonSong2.Position = UDim2.new(0, 1675, 0, 355)
 
-local textButton3 = Instance.new("TextButton")
-textButton3.TextSize = "15"
-textButton3.Text = "Play\nW RIZZ"
-textButton3.Name = "song3Button"
-textButton3.Size = UDim2.new(0, 150, 0, 50)
-textButton3.Position = UDim2.new(0, 1675, 0, 510)
-textButton3.Parent = plrGui
+local textButtonSong3 = Instance.new("TextButton", coreGui)
+textButtonSong3.TextSize = "15"
+textButtonSong3.Text = "Play\nW SONG"
+textButtonSong3.Name = "song3Button"
+textButtonSong3.Size = UDim2.new(0, 150, 0, 50)
+textButtonSong3.Position = UDim2.new(0, 1675, 0, 410)
 
-local textButton4 = Instance.new("TextButton")
-textButton4.TextSize = "15"
-textButton4.Text = "Pause/Resume"
-textButton4.Name = "pauseButton"
-textButton4.Size = UDim2.new(0, 150, 0, 50)
-textButton4.Position = UDim2.new(0, 1675, 0, 600)
-textButton4.Parent = plrGui
+local textButtonSong4 = Instance.new("TextButton", coreGui)
+textButtonSong4.TextSize = "12"
+textButtonSong4.Text = "Play\nVideo Game Lobby"
+textButtonSong4.Name = "song4Button"
+textButtonSong4.Size = UDim2.new(0, 150, 0, 50)
+textButtonSong4.Position = UDim2.new(0, 1675, 0, 466)
 
-local textButton5 = Instance.new("TextButton")
-textButton5.TextSize = "15"
-textButton5.Text = "Rewind"
-textButton5.Name = "rewindButton"
-textButton5.Size = UDim2.new(0, 150, 0, 50)
-textButton5.Position = UDim2.new(0, 1675, 0, 655)
-textButton5.Parent = plrGui
+local textButtonSong5 = Instance.new("TextButton", coreGui)
+textButtonSong5.TextSize = "15"
+textButtonSong5.Text = "Play\nKensuke"
+textButtonSong5.Name = "song5Button"
+textButtonSong5.Size = UDim2.new(0, 150, 0, 50)
+textButtonSong5.Position = UDim2.new(0, 1675, 0, 522)
 
-textButton1.MouseButton1Click:Connect(function()
+local textButtonPause = Instance.new("TextButton", coreGui)
+textButtonPause.TextSize = "15"
+textButtonPause.Text = "Pause/Resume"
+textButtonPause.Name = "pauseButton"
+textButtonPause.Size = UDim2.new(0, 150, 0, 50)
+textButtonPause.Position = UDim2.new(0, 1675, 0, 600)
+
+local textButtonRewind = Instance.new("TextButton", coreGui)
+textButtonRewind.TextSize = "20"
+textButtonRewind.Text = "Rewind"
+textButtonRewind.Name = "rewindButton"
+textButtonRewind.Size = UDim2.new(0, 150, 0, 50)
+textButtonRewind.Position = UDim2.new(0, 1675, 0, 655)
+
+textButtonSong1.MouseButton1Click:Connect(function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://7819487317")
 end)
 
-textButton2.MouseButton1Click:Connect(function()
+textButtonSong2.MouseButton1Click:Connect(function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://11884943198")
 end)
 
-textButton3.MouseButton1Click:Connect(function()
+textButtonSong3.MouseButton1Click:Connect(function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://7016017390")
 end)
 
-textButton4.MouseButton1Click:Connect(function()
+textButtonSong4.MouseButton1Click:Connect(function()
+    game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://12427488975")
+end)
+
+textButtonSong5.MouseButton1Click:Connect(function()
+    game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://11274394114")
+end)
+
+
+textButtonPause.MouseButton1Click:Connect(function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("pause")
 end)
 
-textButton5.MouseButton1Click:Connect(function()
+textButtonRewind.MouseButton1Click:Connect(function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("rewind")
 end)
