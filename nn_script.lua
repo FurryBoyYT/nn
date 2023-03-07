@@ -1,3 +1,6 @@
+getgenv().Theme = "BloodTheme" 
+-- Themes: | DarkTheme | LightTheme | BloodTheme | GrapeTheme | Ocean | Midnight | Sentinel | Synapse | Serpent |
+
 --LIBRARY LOAD
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("nico's nextbots", Theme)
@@ -5,7 +8,6 @@ local Window = Library.CreateLib("nico's nextbots", Theme)
 --TABS
 local songsTab = Window:NewTab("Songs")
 local soundsTab = Window:NewTab("Sounds")
-local loopedSoundsTab = Window:NewTab("Looped Sounds")
 local controlsTab = Window:NewTab("Controls")
 local settingsTab = Window:NewTab("Settings")
 
@@ -14,7 +16,6 @@ local settingsTab = Window:NewTab("Settings")
 local audioId = songsTab:NewSection("Audio ID")
 local songs = songsTab:NewSection("Game Songs")
 local sounds = soundsTab:NewSection("Sounds")
-local loopedSounds = loopedSoundsTab:NewSection("Looped Sounds")
 local controls = controlsTab:NewSection("Controls")
 local settings = settingsTab:NewSection("Gui")
 
@@ -46,11 +47,6 @@ sounds:NewButton("Sus Hub Intro", "Sound name : Sus Hub Intro", function()
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://9091915146")
     wait(3)
     game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("pause")
-end)
-
---LOOPED SOUNDS
-loopedSounds:NewButton("Sus Hub Intro (LOOPED)", "Sound name : Sus Hub Intro", function()
-    game:GetService("ReplicatedStorage").events.player["local"].boomboxsound:FireServer("play", "rbxassetid://9091915146")
 end)
 
 --CONTROLS
