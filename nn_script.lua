@@ -5,6 +5,7 @@ local Window = Library.CreateLib("nico's nextbots", Theme)
 --TABS
 local songsTab = Window:NewTab("Songs")
 local soundsTab = Window:NewTab("Sounds")
+local loopedSoundsTab = Window:NewTab("Looped Sounds")
 local controlsTab = Window:NewTab("Controls")
 local settingsTab = Window:NewTab("Settings")
 
@@ -13,7 +14,7 @@ local settingsTab = Window:NewTab("Settings")
 local audioId = songsTab:NewSection("Audio ID")
 local songs = songsTab:NewSection("Game Songs")
 local sounds = soundsTab:NewSection("Sounds")
-local loopedSounds = soundsTab:NewSection("Looped Sounds")
+local loopedSounds = loopedSoundsTab:NewSection("Looped Sounds")
 local controls = controlsTab:NewSection("Controls")
 local settings = settingsTab:NewSection("Gui")
 
