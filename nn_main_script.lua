@@ -9,4 +9,4 @@ local tableFindGamePlace = {
 }
 if table.find(tableFindGamePlace, game.PlaceId) then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/FurryBoyYT/nn/main/nn_script.lua'))()
-enda
+end
