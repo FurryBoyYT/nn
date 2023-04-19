@@ -1,3 +1,6 @@
+getgenv().Theme = "BloodTheme" 
+-- Themes: | DarkTheme | LightTheme | BloodTheme | GrapeTheme | Ocean | Midnight | Sentinel | Synapse | Serpent |
+
 --LIBRARY LOAD
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("nico's nextbots", Theme)
@@ -7,7 +10,7 @@ local songsTab = Window:NewTab("Songs")
 local soundsTab = Window:NewTab("Sounds")
 local controlsTab = Window:NewTab("Controls")
 local settingsTab = Window:NewTab("Settings")
-
+local creditsTab = Window:NewTab("Credits")
 
 --SECTIONS INSIDE TABS
 local audioId = songsTab:NewSection("Audio ID")
@@ -15,6 +18,7 @@ local songs = songsTab:NewSection("Game Songs")
 local sounds = soundsTab:NewSection("Sounds")
 local controls = controlsTab:NewSection("Controls")
 local settings = settingsTab:NewSection("Gui")
+local credits = creditsTab:NewSection("Credits to FurryBoy#0001")
 
 
 --SONGS
